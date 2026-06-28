@@ -8,8 +8,8 @@ services:
       - key: EMBEDDING_MODE
         value: local
       - key: OPENAI_API_KEY
-        sync: true
+        sync: false
       - key: GROQ_API_KEY
-        sync: true
+        sync: false
       - key: GEMINI_API_KEY
-        sync: true
+        sync: false
