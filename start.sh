@@ -10,4 +10,4 @@ sleep 3
 # Start Streamlit frontend on the port specified by the environment
 # Render/Railway injects PORT for the public-facing service
 echo "Starting Streamlit frontend on port ${PORT:-8501}..."
-streamlit run app.py --server.port ${PORT:-8501} --server.address 0.0.0.0
+streamlit run app.py --server.port ${PORT:-8501} --server.address 0.0.0.0 --server.enableCORS=false --server.enableXsrfProtection=false
