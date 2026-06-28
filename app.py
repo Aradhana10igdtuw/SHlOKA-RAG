@@ -21,7 +21,7 @@ st.set_page_config(
 )
 
 # 1. API Health Check & Discovery (Run first to determine status badges)
-api_url = "http://localhost:8000"
+api_url = os.getenv("API_URL", "http://localhost:8000")
 api_connected = False
 groq_enabled = False
 gemini_enabled = False

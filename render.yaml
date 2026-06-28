@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: shloka-rag
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: EMBEDDING_MODE
+        value: local
+      - key: OPENAI_API_KEY
+        sync: true
+      - key: GROQ_API_KEY
+        sync: true
+      - key: GEMINI_API_KEY
+        sync: true
